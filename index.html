@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#0E0E10" />
     <meta name="theme-color" content="#18181B" />
@@ -14,121 +12,83 @@
     <title>SQLite Online</title>
     <!-- Favicon and icons -->
     <link rel="icon" href="./icons/favicon.ico" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./icons/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./icons/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="./icons/android-chrome-512x512.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icons/android-chrome-512x512.png" />
     <!-- Meta Data -->
-    <meta
-      name="description"
-      content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser."
-    />
-    <meta
-      name="keywords"
-      content="SQLite Viewer, SQLite Editor, WebAssembly SQLite, In-Browser SQLite, Client-Side SQLite, Secure SQLite Editor, Lightweight SQLite Tool, SQL.js, React, Offline SQLite Editor, Browser-Based Database Tool, Fast SQLite Editor, WASM-Powered SQLite, SQLite Management"
+    <meta name="description" content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser." />
+    <meta name="keywords" content="SQLite Viewer, SQLite Editor, WebAssembly SQLite, In-Browser SQLite, Client-Side SQLite, Secure SQLite Editor, Lightweight SQLite Tool, SQL.js, React, Offline SQLite Editor, Browser-Based Database Tool, Fast SQLite Editor, WASM-Powered SQLite, SQLite Management"
     />
     <meta property="og:title" content="SQLite Viewer" />
     <meta property="og:site_name" content="SQLite Viewer" />
     <meta property="og:locale" content="en_US" />
-    <meta
-      property="og:description"
-      content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser."
-    />
+    <meta property="og:description" content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser." />
     <meta property="og:image" content="https://sqlite3.online/preview.png" />
     <meta property="og:url" content="https://sqlite3.online/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SQLite Viewer" />
-    <meta
-      name="twitter:description"
-      content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser."
-    />
+    <meta name="twitter:description" content="Lightweight, secure, and WebAssembly-powered SQLite viewer and editor—works entirely in your browser." />
     <meta name="twitter:image" content="https://sqlite3.online/preview.png" />
     <meta name="author" content="vwh" />
     <!-- Fonts -->
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript
-      ><link
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
     /></noscript>
     <!-- Critical CSS -->
     <style>
-      body {
-        font-family: "Lexend", sans-serif;
-        font-display: swap;
-      }
-      .no-js {
-        text-align: center;
-        margin-top: 20%;
-      }
-      .no-js h1 {
-        font-size: 2rem;
-      }
+        body {
+            font-family: "Lexend", sans-serif;
+            font-display: swap;
+        }
+        
+        .no-js {
+            text-align: center;
+            margin-top: 20%;
+        }
+        
+        .no-js h1 {
+            font-size: 2rem;
+        }
     </style>
-    <script type="module" crossorigin src="/assets/index-0y6RcAeP.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/lodash-BkzDGCz7.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-B2RL9x2s.js">
-    <link rel="modulepreload" crossorigin href="/assets/scheduler-SPyfQU6S.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-dom-BizTJEze.js">
-    <link rel="modulepreload" crossorigin href="/assets/sonner-CRkCOcXB.js">
-    <link rel="modulepreload" crossorigin href="/assets/zustand-DdNYQz4c.js">
-    <link rel="modulepreload" crossorigin href="/assets/lucide-react-DERuKLzj.js">
-    <link rel="modulepreload" crossorigin href="/assets/clsx-B-dksMZM.js">
-    <link rel="modulepreload" crossorigin href="/assets/tailwind-merge-BJOqOzcM.js">
-    <link rel="modulepreload" crossorigin href="/assets/aria-hidden-DQ5UC2Eg.js">
-    <link rel="modulepreload" crossorigin href="/assets/tslib-CDuPK5Eb.js">
-    <link rel="modulepreload" crossorigin href="/assets/get-nonce-C-Z93AgS.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-style-singleton-D7c23Nxa.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-remove-scroll-bar-DpNLLOLX.js">
-    <link rel="modulepreload" crossorigin href="/assets/use-sidecar-BS8h9NSd.js">
-    <link rel="modulepreload" crossorigin href="/assets/use-callback-ref-hrg4jhP2.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-remove-scroll-DWlXkXzq.js">
-    <link rel="modulepreload" crossorigin href="/assets/@floating-ui-xbqwxxL4.js">
-    <link rel="modulepreload" crossorigin href="/assets/@radix-ui-CcK_EW8Q.js">
-    <link rel="modulepreload" crossorigin href="/assets/class-variance-authority-Dp3B9jqt.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-resizable-panels-CS3z951J.js">
-    <link rel="modulepreload" crossorigin href="/assets/@babel-Cv5OCJ0e.js">
-    <link rel="modulepreload" crossorigin href="/assets/@lezer-E7PapBHi.js">
-    <link rel="modulepreload" crossorigin href="/assets/crelt-C8TCjufn.js">
-    <link rel="modulepreload" crossorigin href="/assets/@marijn-DXwl3gUT.js">
-    <link rel="modulepreload" crossorigin href="/assets/style-mod-Bc2inJdb.js">
-    <link rel="modulepreload" crossorigin href="/assets/w3c-keyname-Vcq4gwWv.js">
-    <link rel="modulepreload" crossorigin href="/assets/@codemirror-Bbikk1gI.js">
-    <link rel="modulepreload" crossorigin href="/assets/@uiw-ChcphOCW.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CkkMVRdb.css">
-  </head>
-  <body>
+    <script type="module" crossorigin src="./assets/index-0y6RcAeP.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/lodash-BkzDGCz7.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-B2RL9x2s.js">
+    <link rel="modulepreload" crossorigin href="./assets/scheduler-SPyfQU6S.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-BizTJEze.js">
+    <link rel="modulepreload" crossorigin href="./assets/sonner-CRkCOcXB.js">
+    <link rel="modulepreload" crossorigin href="./assets/zustand-DdNYQz4c.js">
+    <link rel="modulepreload" crossorigin href="./assets/lucide-react-DERuKLzj.js">
+    <link rel="modulepreload" crossorigin href="./assets/clsx-B-dksMZM.js">
+    <link rel="modulepreload" crossorigin href="./assets/tailwind-merge-BJOqOzcM.js">
+    <link rel="modulepreload" crossorigin href="./assets/aria-hidden-DQ5UC2Eg.js">
+    <link rel="modulepreload" crossorigin href="./assets/tslib-CDuPK5Eb.js">
+    <link rel="modulepreload" crossorigin href="./assets/get-nonce-C-Z93AgS.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-style-singleton-D7c23Nxa.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-remove-scroll-bar-DpNLLOLX.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-sidecar-BS8h9NSd.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-callback-ref-hrg4jhP2.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-remove-scroll-DWlXkXzq.js">
+    <link rel="modulepreload" crossorigin href="./assets/@floating-ui-xbqwxxL4.js">
+    <link rel="modulepreload" crossorigin href="./assets/@radix-ui-CcK_EW8Q.js">
+    <link rel="modulepreload" crossorigin href="./assets/class-variance-authority-Dp3B9jqt.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-resizable-panels-CS3z951J.js">
+    <link rel="modulepreload" crossorigin href="./assets/@babel-Cv5OCJ0e.js">
+    <link rel="modulepreload" crossorigin href="./assets/@lezer-E7PapBHi.js">
+    <link rel="modulepreload" crossorigin href="./assets/crelt-C8TCjufn.js">
+    <link rel="modulepreload" crossorigin href="./assets/@marijn-DXwl3gUT.js">
+    <link rel="modulepreload" crossorigin href="./assets/style-mod-Bc2inJdb.js">
+    <link rel="modulepreload" crossorigin href="./assets/w3c-keyname-Vcq4gwWv.js">
+    <link rel="modulepreload" crossorigin href="./assets/@codemirror-Bbikk1gI.js">
+    <link rel="modulepreload" crossorigin href="./assets/@uiw-ChcphOCW.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CkkMVRdb.css">
+</head>
+
+<body>
     <div id="root"></div>
     <noscript>
       <div class="no-js">
@@ -140,5 +100,6 @@
         </p>
       </div>
     </noscript>
-  </body>
+</body>
+
 </html>
